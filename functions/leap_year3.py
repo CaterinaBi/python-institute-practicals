@@ -21,8 +21,17 @@ months = {1:31, 2:28, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12
     return month_length
 
 def day_of_year(year, month, day):
-#
-# Write your new code here.
-#
+def day_of_year(year, month, day):
+	days = 0
+	for m in range(1, month):
+		md = days_in_month(year, m)
+		if md == None:
+			return None
+		days += md
+	md = days_in_month(year, month)
+	if day >= 1 and day <= md:
+		return days + day
+	else:
+		return None
 
 print(day_of_year(2000, 12, 31))
