@@ -2,9 +2,9 @@
 # 1 American gallon = 3.785411784 litres
 
 def liters_100km_to_miles_gallon(liters):
-#
-# Write your code here.
-#
+    gallons = litres / 3.785411784
+    miles = 100 * 1000 / 1609.344
+    return miles / gallons
 
 def miles_gallon_to_liters_100km(miles):
 #
