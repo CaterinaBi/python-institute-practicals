@@ -1,3 +1,6 @@
+# 1 American mile = 1609.344 metres
+# 1 American gallon = 3.785411784 litres
+
 def liters_100km_to_miles_gallon(liters):
 #
 # Write your code here.
