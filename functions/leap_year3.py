@@ -37,4 +37,8 @@ def day_of_year(year, month, day):
 	else:
 		return None
 
+#tests 
 print(day_of_year(2000, 12, 31))
+print(day_of_year(2000, 1, 1))
+print(day_of_year(2000, 2, 28))
+print(day_of_year(2000, 2, 29))
