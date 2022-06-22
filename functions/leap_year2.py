@@ -1,7 +1,8 @@
 def is_year_leap(year):
-#
-# Your code from LAB 4.3.1.6.
-#
+ if year%4 == 0 and year%100 != 0 or year%400 == 0:
+        return True
+    else:
+        return False
 
 def days_in_month(year, month):
 #
