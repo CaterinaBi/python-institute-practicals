@@ -1,11 +1,15 @@
 # 1 American mile = 1609.344 metres
 # 1 American gallon = 3.785411784 litres
 
+# defines a function that takes 1 argument, liters
+# the function calculates mpg from liters/100km
 def liters_100km_to_miles_gallon(liters):
     gallons = litres / 3.785411784
     miles = 100 * 1000 / 1609.344
     return miles / gallons
 
+# defines a function that takes 1 argument, miles
+# the function calculates liters/100km from mpg
 def miles_gallon_to_liters_100km(miles):
     km100 = miles * 1609.344 / 1000 / 100
     litres = 3.785411784
