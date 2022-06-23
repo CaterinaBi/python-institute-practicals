@@ -19,3 +19,11 @@ for key in dictionary.keys():
 # returns tuples where each tuple is a key-value pair
 for english, french in dictionary.items():
     print(english, "->", french)
+
+# updates already existing value
+dictionary['cat'] = 'minou'
+print(dictionary)
+
+# extends already existing dictionary
+dictionary['swan'] = 'cygne'
+print(dictionary)
