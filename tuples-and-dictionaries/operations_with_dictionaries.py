@@ -15,3 +15,7 @@ print(phone_numbers['Suzy'])
 # uses for loop to return an iterable object consisting of all the keys gathered within the dictionary
 for key in dictionary.keys():
     print(key, "->", dictionary[key])
+
+# returns tuples where each tuple is a key-value pair
+for english, french in dictionary.items():
+    print(english, "->", french)
